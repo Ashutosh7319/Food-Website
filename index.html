@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Bites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="loader-screen">
+
+        <div class="loader-content">
+
+
+            <!-- Your Logo -->
+            <img src="images/DesignIN.png" alt="Logo" class="loader-logo">
+
+
+            <!-- Loader -->
+            <div class="loader-ring"></div>
+
+
+            <p>Loading Experience...</p>
+
+        </div>
+
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/DesignIN.png" alt="Design.IN Logo">
+            </div>
+
+            <!-- Navigation menu toggler for Mobile View. -->
+
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <!-- Navigation Bar Items -->
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="hero-slider">
+
+        <!-- Slide 1 -->
+        <div class="slide active">
+
+            <div class="hero-text active-text">
+
+                <span>Fresh & Hot</span>
+
+                <h1>Stone Baked Pizza</h1>
+
+                <p>
+                    Handcrafted with premium cheese,
+                    fresh toppings, and authentic Italian flavor.
+                </p>
+
+                <button class="hero-btn">Order Now</button>
+
+            </div>
+
+
+            <div class="hero-image active-image">
+
+                <img src="images/pizza2.png" alt="Pizza">
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="slide">
+
+            <div class="hero-text">
+
+                <span>Grilled Perfection</span>
+
+                <h1>Juicy Signature Burgers</h1>
+
+                <p>
+                    Flame grilled patties layered
+                    with fresh ingredients and bold flavors.
+                </p>
+
+                <button class="hero-btn">Order Now</button>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="images/burger.png" alt="Burger">
+
+            </div>
+
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="slide">
+
+            <div class="hero-text">
+
+                <span>Golden Crunch</span>
+
+                <h1>Crispy French Fries</h1>
+
+                <p>
+                    Perfectly seasoned, crispy outside,
+                    fluffy inside—made to share.
+                </p>
+
+                <button class="hero-btn">Order Now</button>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="images/fries.png" alt="French Fries">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="menu-section" id="menu">
+
+        <div class="menu-heading">
+
+            <span>Our Special Menu</span>
+
+            <h2>Freshly Made For You</h2>
+
+        </div>
+
+
+        <div class="menu-container">
+
+            <!-- Item 1 -->
+            <div class="menu-card">
+
+                <img src="images/pizza2.png" alt="Pizza">
+
+                <h3>Italian Pizza</h3>
+
+                <p>
+                    Loaded with premium cheese
+                    and fresh toppings.
+                </p>
+
+                <h4>₹299</h4>
+
+            </div>
+
+
+            <!-- Item 2 -->
+            <div class="menu-card">
+
+                <img src="images/burger.png" alt="Burger">
+
+                <h3>Classic Burger</h3>
+
+                <p>
+                    Flame grilled perfection
+                    in every bite.
+                </p>
+
+                <h4>₹249</h4>
+
+            </div>
+
+
+            <!-- Item 3 -->
+            <div class="menu-card">
+
+                <img src="images/fries.png" alt="Fries">
+
+                <h3>French Fries</h3>
+
+                <p>
+                    Crispy, golden,
+                    and perfectly seasoned.
+                </p>
+
+                <h4>₹149</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="reservation-section" id="reservation">
+
+        <!-- Heading -->
+        <div class="reservation-heading">
+
+            <span>Book Your Experience</span>
+
+            <h2>Select Your Table</h2>
+
+        </div>
+
+
+
+        <!-- Table Selection -->
+        <div class="table-selection">
+
+
+            <!-- Standard -->
+            <div class="table-card active-table">
+
+                <img src="images/table1.jpeg" alt="Standard Table">
+
+                <div class="table-info">
+
+                    <h3>Standard Table</h3>
+
+                    <p>2 - 4 Guests</p>
+
+                    <h4>₹499</h4>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Premium -->
+            <div class="table-card">
+
+                <img src="images/table2.jpeg" alt="Premium Table">
+
+                <div class="table-info">
+
+                    <h3>Premium Table</h3>
+
+                    <p>2 - 6 Guests</p>
+
+                    <h4>₹999</h4>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Reservation Form -->
+        <form class="reservation-form">
+
+            <input id="customer-name" type="text" placeholder="Your Name">
+
+            <input id="customer-phone" type="tel" placeholder="Phone Number">
+
+            <input id="booking-date" type="date">
+
+            <input id="booking-time" type="time">
+
+            <div class="table-selector">
+
+                <h3>Select Table</h3>
+
+
+                <label>
+
+                    <input type="radio" name="table-type" value="499" checked>
+
+                    Standard Table (2–4 Guests)
+
+                </label>
+
+
+
+                <label>
+
+                    <input type="radio" name="table-type" value="999">
+
+                    Premium Table (2–4 Guests)
+
+                </label>
+
+
+                <div class="selected-price">
+
+                    Price:
+                    <span id="table-price">
+
+                        ₹499
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <button type="submit">
+
+                Reserve Now
+
+            </button>
+
+        </form>
+
+        <div class="reservation-popup">
+
+            <div class="popup-box">
+
+                <h2>Reservation Confirmed</h2>
+
+                <div id="popup-details"></div>
+
+                <button id="close-popup">
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+
+        <!-- Left Side -->
+        <div class="contact-info">
+
+            <span>Visit Us</span>
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                We'd love to serve you.
+                Visit us, call us, or send us a message.
+            </p>
+
+
+            <div class="info-item">
+
+                📍 123 Park Street, Kolkata
+
+            </div>
+
+
+            <div class="info-item">
+
+                ☎ +91 9876543210
+
+            </div>
+
+
+            <div class="info-item">
+
+                ✉ hello@urbanbites.com
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Right Side -->
+        <form class="contact-form">
+
+            <input id="contact-name" type="text" placeholder="Your Name">
+
+
+            <input id="contact-email" type="email" placeholder="Email Address">
+
+
+            <textarea id="contact-message" placeholder="Your Message"></textarea>
+
+
+            <button type="submit">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+        <div class="message-popup">
+
+            <div class="message-box">
+
+                <h2>Message Sent ✅</h2>
+
+                <div id="message-details"></div>
+
+                <button id="close-message">
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+
+            <!-- Logo -->
+            <div class="footer-logo">
+
+                <img src="images/DesignIN.png" alt="Design.in Logo">
+
+            </div>
+
+
+
+            <!-- Footer Text -->
+            <p>
+
+                Crafted as a demo website by
+
+                <span>Priyanshu Saha</span>
+
+                — Founder of
+
+                <a href="https://designdotin.netlify.app/" target="_blank">
+
+                    DESIGN.IN
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
