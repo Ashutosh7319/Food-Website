@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     /* Base */
     --bg: hsl(0, 0%, 5%);
@@ -5,14 +6,42 @@
     --text: hsl(0, 0%, 95%);
     --text-muted: hsl(0, 0%, 70%);
 
+     --gradient: linear-gradient(0deg, var(--bg) 95%, var(--bg-soft));
+    --gradient-hover: linear-gradient(0deg, var(--bg), var(--bg-soft));
+    --highlight: hsl(0 0% 60%);
+
     /* Accent (Orange Food Tone) */
     --accent: hsl(25, 95%, 55%);
+    --accent-selector: hsl(25, 95%, 55%);
     --accent-hover: hsl(25, 95%, 60%);
     --accent-soft: hsl(25, 95%, 20%);
 
     /* UI */
-    --border: hsl(0, 0%, 15%);
+    --border: hsl(0, 0%, 30%);
+    --border-card: solid 1px var(--border);
     --glass-bg: rgba(20, 20, 20, .45);
+
+    --shadow:
+    0px 8px 25px hsla(0, 0%, 0%, 0.65),
+    0px 16px 45px hsla(0, 0%, 0%, 0.45),
+    0px 0px 0px 1px hsla(0, 0%, 100%, 0.05),
+   
+}
+
+body.light {
+    --bg: hsl(0, 0%, 95%);
+    --bg-soft: hsl(0, 0%, 100%);
+
+    --text: hsl(0, 0%, 5%);
+    --text-muted: hsl(0, 0%, 30%);
+
+    --border: hsl(0, 0%, 30%);
+    --border-card: solid 1px var(--bg);
+
+     --shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.07), 0px 4px 4px hsla(0, 0%, 0%, 0.15);
+
+    --accent-selector: hsl(25, 5%, 45%);
+    --glass-bg: rgba(255, 255, 255, .55);
 }
 
 * {
@@ -88,6 +117,7 @@ body {
     text-decoration: none;
     color: #111;
     color: hsl(25, 90%, 60%);
+    color: var(--text-muted);
     font-weight: 500;
     transition: .3s;
     position: relative;
@@ -257,10 +287,10 @@ body {
 
     background: var(--accent);
 
-    color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 99%);
 
     font-size: 0.95rem;
-    font-weight: 600;
+    /* font-weight: 600; */
 
     cursor: pointer;
 
@@ -314,7 +344,9 @@ body {
 
     background: var(--bg-soft);
 
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
+    border: var(--border-card);
+    box-shadow: var(--shadow);
 
     border-radius: 24px;
 
@@ -403,7 +435,9 @@ body {
 
     background: var(--bg-soft);
 
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
+    border: var(--border-card);
+    box-shadow: var(--shadow);
 
     border-radius: 24px;
 
@@ -475,7 +509,9 @@ body {
 
     background: var(--bg-soft);
 
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
+    border: var(--border-card);
+    box-shadow: var(--shadow);
 
     border-radius: 24px;
 }
@@ -489,8 +525,11 @@ body {
     font-family: "Poppins";
 
     background: transparent;
+    background: var(--bg-soft);
 
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
+    border: var(--border-card);
+    /* box-shadow: var(--shadow); */
 
     border-radius: 14px;
 
@@ -530,11 +569,11 @@ body {
 
     background: var(--accent);
 
-    color: var(--bg);
+    color: hsl(0, 0%, 99%);
 
     font-size: 1rem;
 
-    font-weight: 600;
+    /* font-weight: 500; */
     font-family: "Poppins";
 
     cursor: pointer;
@@ -550,6 +589,7 @@ body {
 
     filter:
         invert(64%) sepia(96%) saturate(1650%) hue-rotate(350deg) brightness(102%) contrast(102%);
+    font-size: 1.3rem;
 }
 
 .reservation-form input[type="date"]:hover::-webkit-calendar-picker-indicator,
@@ -603,10 +643,10 @@ body {
 
 .table-selector input[type="radio"] {
 
-    accent-color: var(--accent);
+    /* accent-color: var(--accent); */
+    accent-color: var(--accent-selector);
 
     width: 18px;
-
     height: 18px;
 }
 
@@ -667,9 +707,11 @@ body {
 
     padding: 2.5rem;
 
-    background: var(--bg-soft);
+    background: var(--bg);
 
-    border: 1px solid var(--accent);
+    /* border: 1px solid var(--accent); */
+    border: var(--border-card);
+    box-shadow: var(--shadow);
 
     border-radius: 24px;
 
@@ -699,8 +741,10 @@ body {
     border: none;
 
     border-radius: 999px;
+    font-family: "Poppins";
 
     background: var(--accent);
+    color: var(--text);
 
     cursor: pointer;
 
@@ -784,7 +828,9 @@ body {
 
     background: var(--bg-soft);
 
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
+    border: var(--border-card);
+    box-shadow: var(--shadow);
 
     border-radius: 24px;
 }
@@ -797,6 +843,8 @@ body {
     background: transparent;
 
     border: 1px solid var(--border);
+    border: var(--border-card);
+    /* box-shadow: var(--shadow); */
 
     border-radius: 14px;
 
@@ -837,10 +885,11 @@ body {
 
     background: var(--accent);
 
-    color: var(--bg);
+    color: hsl(0, 0%, 98%);
 
-    font-weight: 600;
+    /* font-weight: 500; */
     font-family: "Poppins";
+    font-size: 0.9rem;
 
     cursor: pointer;
 
@@ -898,6 +947,8 @@ body {
     background: var(--bg-soft);
 
     border: 1px solid var(--accent);
+    border: var(--border-card);
+    box-shadow: var(--shadow);
 
     border-radius: 24px;
 
@@ -930,11 +981,12 @@ body {
     border-radius: 999px;
 
     background: var(--accent);
+    color: var(--text);
 
     cursor: pointer;
 
     font-family: "Poppins";
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 /* Footer styling. */
@@ -943,9 +995,11 @@ body {
 
     padding: 2rem 8%;
 
-    border-top: 1px solid var(--border);
+    /* border-top: 1px solid var(--border); */
+    /* box-shadow: var(--shadow);
+    border: var(--border-card); */
 
-    background: var(--bg);
+    background: var(--bg-soft);
 }
 
 .footer-content {
@@ -1086,6 +1140,36 @@ body {
     }
 
 }
+
+/* Theme toggler styling. */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+
+    background: var(--bg-light);
+    color: var(--text);
+
+    font-size: 28px;
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .18);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .35s;
+    z-index: 9999;
+}
+
 
 /* Responsive Design. */
 

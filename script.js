@@ -409,3 +409,46 @@ window.addEventListener(
     }
 
 );
+
+// Theme toggling code.
+
+const toggleBtn =
+    document.getElementById("theme-toggle");
+
+/* keep saved theme */
+
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+    toggleBtn.innerHTML = "☀";
+}
+
+
+
+toggleBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("light");
+
+
+    if (
+        document.body.classList.contains("light")
+    ) {
+
+        toggleBtn.innerHTML = "☀";
+
+        localStorage.setItem(
+            "theme",
+            "light"
+        );
+
+    } else {
+
+        toggleBtn.innerHTML = "🌙";
+
+        localStorage.setItem(
+            "theme",
+            "dark"
+        );
+
+    }
+
+});
